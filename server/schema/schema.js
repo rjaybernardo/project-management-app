@@ -1,4 +1,4 @@
-const { projects, cliente } = require("../sampleData");
+const { projects, clients } = require("../sampleData");
 
 const {
   GraphQLObjectType,
@@ -14,7 +14,7 @@ const ClientType = new GraphQLObjectType({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
     email: { type: GraphQLString },
-    phone: { tye: GraphQLString },
+    phone: { type: GraphQLString },
   }),
 });
 
